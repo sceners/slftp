@@ -1,0 +1,69 @@
+[skiplist]
+# allowedfiles=directories:masks
+# masks are case insensitive. seperate values by comma (,)
+# empty directories means top of the rip
+# _MULTICDROOT_ is special, its true only if rip contains CD1 and CD2 stuffs
+# if there is no matching mask for a file, it will be skiplisted.
+#
+# builtin skiplists:
+# zero sized files
+# files beginning with dot
+# empty directories
+# ftprush based foobar(1).mp3 files
+# tag directories with characters like [ or ]
+#
+# after these generic rules,
+# global skiplist settings allow everything
+allowedfiles=_ROOT_:*
+allowedfiles=_MULTICDROOT_:*
+alloweddirs=*:*
+dirdepth=2
+
+[skiplist-0DAY]
+# everything other than zip will be ignored
+allowedfiles=_ROOT_:*.zip
+dirdepth=1
+
+[skiplist-PRE]
+# we race mp3 and sfv only
+# order of filemasks is significant! we will race sfv first!
+# (if site setting doesnt override it)
+allowedfiles=_ROOT_:*.sfv,*.mp3,*.jpg,*.jpeg,*.nfo
+dirdepth=1
+
+[skiplist-MP3]
+# we race mp3 and sfv only
+# order of filemasks is significant! we will race sfv first!
+# (if site setting doesnt override it)
+allowedfiles=_ROOT_:*.sfv,*.mp3,*.jpg,*.jpeg,*.nfo
+dirdepth=1
+
+[skiplist-DIVX]
+allowedfiles=_ROOT_:*.sfv,_RAR_,*.nfo
+allowedfiles=_MULTICDROOT_:*.nfo
+alloweddirs=_ROOT_:Sample,Sub,Subs,Cover,Covers
+alloweddirs=_MULTICDROOT_:CD*[1-9],DISK*[1-9],DISC*[1-9],Sample*,Sub*,Cover*
+allowedfiles=CD*[1-9],DISK[1-9],DISC[1-9],DVD[1-9]:*.sfv,_RAR_
+allowedfiles=Sample*:*.avi
+allowedfiles=Sub*:*.sfv,_RAR_
+allowedfiles=Sub*:*.sfv,_RAR_
+allowedfiles=Cover,Covers:*.jpg,*.jpeg
+dirdepth=2
+
+[skiplist-MDVDR]
+allowedfiles=_ROOT_:*.sfv,_RAR_,*.nfo
+# multicd rips accept nfo only in the root
+allowedfiles=_MULTICDROOT_:*.nfo
+alloweddirs=_ROOT_:Sample*,Cover*
+alloweddirs=_MULTICDROOT_:DISK[1-9],DISC[1-9],DVD[1-9],Sample*,Cover*
+allowedfiles=DISK[1-9],DISC[1-9],DVD[1-9]:*.sfv,_RAR_
+allowedfiles=Sample*:*.vob
+allowedfiles=Cover*:*.jpg,*.jpeg
+alloweddirs=DISK[1-9],DISC[1-9],DVD[1-9]:Sample,Samples
+dirdepth=3
+
+[skiplist-XXXPIX]
+allowedfiles=_ROOT_:*.sfv,_RAR_,*.zip,*.nfo
+alloweddirs=_ROOT_:Sample*
+allowedfiles=Sample*:*.jpg,*.jpeg
+dirdepth=2

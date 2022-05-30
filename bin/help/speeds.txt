@@ -1,0 +1,2 @@
+Displays the routing table of a site.
+Usage: <cmd> sitename

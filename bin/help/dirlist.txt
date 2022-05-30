@@ -1,0 +1,5 @@
+Usage: <cmd> site [section] [directory]
+Description: lists section's dir[/directory] on site. Default section is PRE
+Example: 
+to dirlist predir on MyHQ: <cmd> MyHQ
+to dirlist predir/Latest-Release-MyGRP on MyHQ: <cmd> MyHQ Latest-Release-MyGRP

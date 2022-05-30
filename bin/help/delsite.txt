@@ -1,0 +1,2 @@
+Completly removes a site.
+Usage: <cmd> sitename

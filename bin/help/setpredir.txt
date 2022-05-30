@@ -1,0 +1,4 @@
+Usage: <cmd> sitename predir
+Description: sets pre dir on site.
+See also <prefix>setprecmd
+Example: <cmd> MyHQ /PRE/MP3

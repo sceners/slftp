@@ -1,0 +1,29 @@
+Adds a rule for precatcher.
+Usage: <cmd> sitename netname channelname botnicks (PRE|COMPLETE|MP3|PRETIME) words [section]
+botnicks is a comma separated list of nicks of the bot.
+All the rest parameters are optional, you can use - to skip a parameter.
+event can be PRE, COMPLETE or - (omitted), which is the default.
+Keyword DONE and COMPLETE and READY are not needed to add for COMPLETE event.
+words is a comma separated list of words which are in the line of the actual event.
+If you specify section, section is forced to be that one.
+Examples:
+site X1 uses the default dZsbot theme, so we need to specify the botname only:
+<cmd> X1 LINKNET #x1 x1bot
+In case the nickname x1bot is taken, the sitebot is using x1b0t, which means you can add as 2nd rule as well:
+<cmd> X1 LINKNET #x1 x1b0t
+or you can merge the two into this single rule:
+<cmd> X1 LINKNET #x1 x1bot,x1b0t
+
+Ok, lets say we have a site called X2, which has its mp3 section in a separated channel, and the bot doesnt announce word MP3 in the lines.
+Since its still using the default dZsbot theme, so complete and pre events can be recognized without additional info, all we do is forcing
+the channel to MP3 section:
+<cmd> X2 LINKNET #x2 x2bot - - MP3
+
+Ok, we have a site called X3, they are very expert guys and customized the theme, so they annonce complete as cumshot and pre as squirt.
+Lets add its rules:
+<cmd> X3 LINKNET #x3 x3bot COMPLETE cumshot
+<cmd> X3 LINKNET #x3 x3bot PRE squirt
+without these rules the precatcher would recognize all the events as newdirs.
+
+Ok, lets say X4 has an additional bot next to the sitebot, which announces the pretime.
+<cmd> X4 LINKNET #x4 nonamebot PRETIME

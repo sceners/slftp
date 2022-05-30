@@ -1,0 +1,4 @@
+Usage: <cmd> site [section] directory
+Description: checks dir of section/directory on site for lame headers. Default section is PRE.
+Example: 
+<cmd> MyHQ Latest-Release-MyGRP

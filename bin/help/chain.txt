@@ -1,0 +1,11 @@
+Creates/modifies/deletes a chain.
+Usage: !chain chainname site1 [site2 [site3] ...]
+If a site is not found in the chain, the site is being added.
+If the site is found in the chain, the site is being removed.
+If a chain does not exist, it is being created.
+If a chain gets empty, the chain is removed.
+Examples:
+<cmd> GRP HQ1 HQ2 <- chain GRP is created, HQ1, HQ2 are added.
+<cmd> GRP HQ2 HQ3 <- HQ2 is removed, HQ3 is added (so chain GRP has HQ1 and HQ3 now)
+<cmd> GRP HQ1 HQ3 <- chain GRP is removed.
+

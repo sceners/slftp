@@ -1,0 +1,2 @@
+Usage: <cmd>
+Description: displays outgoing part of routing table

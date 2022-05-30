@@ -1,0 +1,42 @@
+[racetool]
+minimum_rlsname=10
+
+[ignorelist]
+nukewords="Total New dirs" "shot down" REQUEST REQFILLED NUKE REQUESTS "- Required:" REQ invite downloading uploading dap reqstatus nuked nuke undupe selected archive "Total New dirs" delete deleted
+tagline=moto tagline
+
+[replace]
+replacefrom=0-DAY-MKD
+replaceto=0DAY
+replacefrom=(;);-;Tansistor Bass
+replaceto=
+
+[sections]
+ISOAPPS=ISOAPPS APPS
+ISOGAMES=ISOGAMES GAMES
+0DAY=0DAY 0DAYS
+MP3=MP3
+PDA=PDA
+TVDOCU=TVDOCU DOCU
+TVDVDRIP=TVDVDRIP
+TVDVDR=TVDVDR
+TV=TV TVENG
+EBOOK=EBOOK EBOOKS
+DIVXHU=DIVXHU DiVXHUN
+DIVX=DiVX XVID
+XXXPIX=XXXPIX
+XXX=XXX
+MV=MV
+MDVDR=MDVDR MUSICDVDR MDVD MUSICDVD
+
+[mappings]
+// oday becomes pda if 
+0DAY;PDA;*.SymbianOS*,*-*PDA,*.WM2003.*,*.XScale.*,*.J2Me*,*.PalmOS.*
+0DAY;EBOOK;*.EBOOK-*,*.EBOOK.*,ActualTests.*,*.Exam.Q.*
+// everything becomes XXX if PORNOLATiON
+;XXX;*-PORNOLATiON
+// tv becomes tv-dvdrip if dvdrip
+TV;TVDVDRIP;*.DVDRiP.*
+TV;TVDVDR;*.DVDR.*
+// divx becomes divxhu if
+DIVX;DIVXHU;*Hungarian*,*.HUN.*,*HUNDuB*,*.HU-MAN

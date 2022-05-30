@@ -1,0 +1,6 @@
+Usage: <cmd> srcsite dstsite rank
+Description: setss speed between src and dst sites. Rank is an integer, 
+ higher value means better speeds. <prefix>spread command uses these settings for routing.
+ Use zero for deleting an entry.
+Example: <cmd> MyHQ1 MyHQ2 10
+<cmd> MyHQ2 MyHQ3 6

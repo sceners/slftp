@@ -1,0 +1,3 @@
+Get/sets autobnctest status of a site.
+Usage: <cmd> sitename interval
+If interval is zero, autobnctest is turned off. Interval is seconds.

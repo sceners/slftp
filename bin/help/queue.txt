@@ -1,0 +1,2 @@
+Usage: <cmd>
+Description: displays queue of the ftp client, max 10 entries.

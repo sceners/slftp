@@ -1,0 +1,3 @@
+Changes the max number of slots for uploading/downloading. Default is 2 2!
+Usage: <cmd> sitename maxup maxdn
+Example: <cmd> HQ 2 1

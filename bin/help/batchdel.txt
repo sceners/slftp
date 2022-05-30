@@ -1,0 +1,2 @@
+Deletes a rip from the batch queue. It needs the very same parameters as the rip was added.
+This is useful when you realize you fucked up the rippername, and wanna remove it.

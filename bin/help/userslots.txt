@@ -1,0 +1,3 @@
+Usage: <cmd> sitename leechslots ratioslots
+Description: sets the slots.
+-1 means unlimited.

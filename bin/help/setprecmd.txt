@@ -1,0 +1,4 @@
+Usage: <cmd> sitename precommand
+Description: sets pre command on site. Use <rlsname> macro. Use <ripper> macro.
+See also <prefix>setpredir !pre
+Example: <cmd> MyHQ SITE PRE <rlsname> MP3

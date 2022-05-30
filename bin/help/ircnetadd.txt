@@ -1,0 +1,4 @@
+Adds an IRC network
+Usage: <cmd> netname host:port sslmode [password]
+sslmode is 0 or 1
+password is optional

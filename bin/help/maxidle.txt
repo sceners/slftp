@@ -1,0 +1,4 @@
+Changes the time for idling. Unit is seconds. 0 means infinite. Interval is 
+how often the client should do some activity, and this parameter is optional.
+Usage: <cmd> sitename maxidle [interval]
+Example: <cmd> HQ 120

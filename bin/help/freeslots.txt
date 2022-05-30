@@ -1,0 +1,1 @@
+Displays free ratio/leech slots on sites.

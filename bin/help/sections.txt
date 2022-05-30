@@ -1,0 +1,6 @@
+Creates/modifies/deletes section list of a site.
+Usage: <cmd> sitename [section1] [section2 ...]
+If no sections are specified, then it lists section list of site.
+If a section is not found in the list, the section is being added.
+If the section is found in the list, the section is being removed.
+If the list gets empty, it is removed.

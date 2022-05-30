@@ -1,0 +1,2 @@
+Usage: <cmd>
+Description: displays incoming part of routing table

@@ -1,0 +1,2 @@
+Turns on/off sslfxp. Note, sslfxp will be turned on automaticly if the site requires it.
+Usage: <cmd> sitename [0|1]

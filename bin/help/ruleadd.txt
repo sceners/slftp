@@ -1,0 +1,13 @@
+Usage: <cmd> SITENAME SECTION if[not] condition1 [&& condition2 [&& condition3 ...]] then (ALLOW|DROP)
+For list of conditions type <cmdprefix>rulelist.
+To get description of a condition type <cmdprefix>rulehelp condition_name
+Operators:
+= simple equality test
+=~ mask match with wildchar support. Eg.: releasename =~ *-BERC
+in list operator, matches any items in the lsit. Eg.: mp3source in TAPE, VINYL
+< <= >= > comparator for mp3year
+@ equality match but it expects SITENAME as parameter
+
+You can use the special section GENERIC for generic rules.
+If no matching rules found, no action is taken, the release wont be allowed.
+If a matching rule found, its action will be taken.

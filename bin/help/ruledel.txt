@@ -1,0 +1,2 @@
+Usage: <cmd> id
+Deletes the rule specified.

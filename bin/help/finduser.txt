@@ -1,0 +1,2 @@
+Usage: <cmd> username
+Displays which sites username is added to.

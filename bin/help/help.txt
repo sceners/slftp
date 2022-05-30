@@ -1,0 +1,2 @@
+Displays help on commands.
+Usage: <cmd> [commandname]

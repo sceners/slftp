@@ -1,0 +1,2 @@
+Stops an active transfer.
+Usage: <cmd> pazo_id

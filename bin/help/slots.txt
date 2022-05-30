@@ -1,0 +1,3 @@
+Change number of slots of a site.
+Usage: <cmd> sitename newslots
+Example: <cmd> HQ 3

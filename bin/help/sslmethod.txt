@@ -1,0 +1,7 @@
+Changes the SSL method of the site, implicit or explicit (AUTH TLS).
+Usage: <cmd> HQ method
+Valid methods are:
+0: sslNone
+1: sslImplicit
+2: sslSSLv23
+3: sslTLSv1 (default)

@@ -1,0 +1,3 @@
+Changes connect and IO timeout of a site.
+Usage: <cmd> sitename connecttimeout iotimeout
+Example: <cmd> HQ 20 15

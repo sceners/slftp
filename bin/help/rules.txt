@@ -1,0 +1,2 @@
+Displays the ruleset of a site.
+Usage: <cmd> sitename section

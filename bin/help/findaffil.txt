@@ -1,0 +1,2 @@
+Usage: <cmd> section affil
+Displays sites having affil 

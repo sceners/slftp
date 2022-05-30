@@ -1,0 +1,3 @@
+Usage: <cmd> sitename
+Description: marks site as down
+Example: <cmd> D

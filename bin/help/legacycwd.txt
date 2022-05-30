@@ -1,0 +1,3 @@
+Usage: <cmd> sitename [0|1]
+If turned on, it uses CWD commands to change dir (recommended for cubnc sites).
+If turned off, bot doesnt changes working directory but bot uses full pathes everywhere.

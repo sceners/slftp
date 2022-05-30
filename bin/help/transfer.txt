@@ -1,0 +1,3 @@
+Usage: <cmd> srcsite dstsite [section] rlsname
+Description: transfers rlsname from srcsite to dstsite in section. Default section is PRE.
+Example: <cmd> HQ1 HQ2 MP3 MyRip-GRP 

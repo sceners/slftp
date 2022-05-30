@@ -1,0 +1,3 @@
+Displays an entry of the knowledge base.
+Usage: <cmd> section rlsname
+Use <cmdprefix>kblist to list latest entries of the kb.

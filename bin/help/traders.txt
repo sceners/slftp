@@ -1,0 +1,2 @@
+Creates/modifies/deletes trader list of a site.
+Usage: <cmd> sitename [traderuser1] [traderuser2 ...]

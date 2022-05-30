@@ -1,0 +1,4 @@
+Executes a raw ftp command.
+<cmd> sitename command
+Examples:
+<cmd> HQ SITE MSG READ

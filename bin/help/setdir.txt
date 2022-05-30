@@ -1,0 +1,4 @@
+Usage: <cmd> sitename section dir
+Description: sets dir of section on site. To remove a section, omit dir parameter.
+See also <prefix>setprecmd <prefix>setpredir
+Example: <cmd> MyHQ MP3 /MP3-TODAY
